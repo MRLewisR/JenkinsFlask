@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title></title>
+    <style type="text/css">
+      a {
+        color: #FF0000;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -12,7 +17,7 @@
         <a href="{{ url_for('post_create') }}">Create a new Post</a>
         <a href="{{ url_for('logout') }}">Logout</a>
         {% else %}
-        <a href="{{ url_for('home') }}" style="color: #00FF00">Home Page</a>
+        <a href="{{ url_for('home') }}">Home Page</a>
         <a href="{{ url_for('login') }}">Login</a>
         <a href="{{ url_for('register') }}">Register</a>
         {% endif %}
